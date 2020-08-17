@@ -119,7 +119,7 @@ class DownloadsBaseCollectionCell: SwipeCollectionViewCell{
         let size = offlineFile.getFileSize()
         let date = offlineFile.downloadDate?.asString ?? ""
         let progress = offlineFile.progress * 100
-        let dateSizeText = "\(Int(progress))% | \(size), \(date)"
+        let dateSizeText = "\(size) · \(Int(progress))%"
         if dateSizeText != dateSizeLabel.text {
             dateSizeLabel.text = dateSizeText
         }
